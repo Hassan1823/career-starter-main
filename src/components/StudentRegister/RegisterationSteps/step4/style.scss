@@ -1,0 +1,81 @@
+#Step4Kxi39 {
+  width: 100%;
+
+  .stepWrapper {
+    text-align: left;
+  }
+
+  .section_title {
+    h3 {
+      color: #222;
+    }
+  }
+  .card_wrapper {
+    padding: 5px 10px;
+  }
+  .LogoSlides {
+    margin: 20px auto;
+  }
+  .Next_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50px;
+    border-radius: 100%;
+    padding: 2px 4px;
+    background-color: #fff;
+    color: #222;
+    cursor: pointer;
+    box-shadow: 3px 10px 13px -7px rgba(188, 188, 188, 0.75);
+  }
+  .Prev_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -50px;
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 2px 4px;
+    background-color: #fff;
+    color: #222;
+    box-shadow: 3px 10px 13px -7px rgba(188, 188, 188, 0.75);
+  }
+  .card {
+    // width: 130px;
+    box-shadow: 0px 10px 13px -7px rgba(188, 188, 188, 0.75);
+    padding: 40px 20px;
+
+    .Logo_img {
+      height: 46px;
+      // width: 125px;
+      // width: 100%;
+      margin: auto;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .Next_arrow,
+    .Prev_arrow {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .card {
+      min-height: 180px;
+      .Logo_img {
+        height: 50px;
+        // width: 80%;
+      }
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .card {
+      min-height: 220px;
+      padding: 20px 20px;
+      .Logo_img {
+        height: 60px;
+        // width: 60%;
+      }
+    }
+  }
+}

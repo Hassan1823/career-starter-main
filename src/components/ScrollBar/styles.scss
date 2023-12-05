@@ -1,0 +1,89 @@
+.main-container {
+  background-color: white;
+  scroll-snap-align: start;
+  // padding-top: 2%;
+}
+
+.hor-scroll {
+  position: relative;
+  height: 300vh;
+  background-image: url(../../assets/images/bg-s.png);
+  overflow-y: clip;
+}
+
+.hor-scroll-con {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 4%;
+}
+.scroll-heading {
+  width: auto;
+  height: auto;
+  padding-left: 1%;
+  font-size: x-large;
+  z-index: 99;
+}
+
+.motion-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  gap: 3rem;
+  // margin-left: 13%;
+}
+
+.scroll-img img {
+  width: 100%;
+  height: 100%;
+}
+.image-div {
+  width: 30vw;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.image-div img {
+  width: 100%;
+  height: 100%;
+  // box-shadow: 30px;
+  box-shadow: 0 0 10px rgb(213, 208, 237);
+}
+
+.image-div1 {
+  width: 100%;
+  height: 40%;
+  object-fit: inherit;
+  border-radius: 10px;
+}
+.image-div2 {
+  width: 100%;
+  height: 40%;
+  object-fit: inherit;
+  border-radius: 10px;
+}
+
+.scroll-img {
+  width: 22vw;
+  height: 65vh;
+  object-fit: fill;
+  border-radius: 10px;
+  // box-shadow: 30px;
+  box-shadow: 0 0 10px rgb(213, 208, 237);
+}
+
+.extra-comp {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

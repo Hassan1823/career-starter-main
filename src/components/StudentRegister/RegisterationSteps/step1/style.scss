@@ -1,0 +1,62 @@
+#Step1Ki3 {
+  // position: absolute;
+  // left: 50%;
+  // top: 50%;
+  // transform: translateX(-50%, -50%);
+  // width: 60%;
+  .stepWrapper {
+    text-align: left;
+  }
+  .backButton {
+    cursor: pointer;
+  }
+  .section_title {
+    h3 {
+      color: #222;
+    }
+  }
+  .interest_wrapper {
+    margin-top: 50px;
+    .interest_container {
+      display: flex;
+      justify-content: start;
+      align-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .interest_Item {
+      display: flex;
+      justify-content: start;
+      align-content: center;
+      gap: 12px;
+      color: var(--gray-500-p, #667085);
+      font-weight: 400;
+      flex-direction: row;
+      background-color: #fff;
+      width: max-content;
+      padding: 8px 17px;
+      border-radius: 30px;
+      border: 1px solid #e7e5e5;
+      cursor: pointer;
+      &.active {
+        background: var(--primary-300, #fea3b4);
+      }
+      .Interest_text {
+        font-size: 12px;
+        font-weight: 400;
+      }
+      p {
+        text-align: center;
+        margin: auto auto;
+      }
+      .interest_icon {
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    // width: 100%;
+  }
+}

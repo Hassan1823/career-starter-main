@@ -1,0 +1,196 @@
+.HomeBannerSection {
+  width: 100%;
+  min-height: 850px;
+  height: 100vh;
+  padding: 20px;
+
+  .banner_wrapper {
+    // background-color: #44b09e;
+    // background-image: linear-gradient(315deg, #44b09e 0%, #e0d2c7 74%);
+    background-image: url(../../assets/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: auto auto;
+    border-radius: 10px;
+    padding-top: 120px;
+  }
+
+  .gropu1Sectin {
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    .group_wrapper {
+      margin: auto auto;
+      padding-left: 30px;
+      .title {
+        h2 {
+          font-size: 35px;
+        }
+        p {
+          font-family: sans-serif;
+          font-size: 16px;
+          font-weight: 550;
+        }
+      }
+      .searchInput {
+        margin-top: 30px;
+        p {
+          font-size: 16px;
+          margin-bottom: 1rem;
+          font-family: sans-serif;
+          font-weight: 600;
+        }
+        .wrapper {
+          background-color: #fff;
+          border-radius: 180px;
+          width: 100%;
+          max-width: 412px;
+          height: 60px;
+          padding: 0 20px;
+          gap: 10px;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          flex-direction: row;
+          img {
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+          }
+          #UniDrop {
+            outline: none;
+            border: none;
+            width: 100%;
+            font-size: 14px;
+          }
+        }
+        .searchContainer {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 30px;
+          flex-wrap: wrap;
+        }
+
+        .imgGroup {
+          img {
+            margin-left: -15px;
+            height: 40px;
+            width: 40px;
+            border: 3px solid #fff;
+            border-radius: 100%;
+          }
+        }
+      }
+    }
+    .quick_links {
+      margin-top: 100px;
+      h4 {
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .LocationsContainer {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: start;
+        align-content: center;
+        gap: 7px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 70%;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+        }
+        .locations {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 7px;
+          flex-direction: row;
+          width: max-content;
+          padding: 5px 7px;
+          background-color: #fff;
+          border-radius: 30px;
+          color: #667085;
+          img {
+            height: 16px;
+            width: 16px;
+            object-fit: cover;
+            border-radius: 100%;
+          }
+          p {
+            font-family: sans-serif;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .Group_wrapper {
+    .groupImg {
+      display: flex;
+      justify-content: end;
+      align-content: center;
+      img {
+        position: relative;
+        right: 0;
+        float: right;
+        margin-right: 0;
+      }
+    }
+    .titles {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 12px;
+      flex-direction: column;
+    }
+    .titleItem2 {
+      opacity: 0.5;
+    }
+    .titleItem3 {
+      position: relative;
+      opacity: 0.2;
+      h3 {
+        background: -webkit-linear-gradient(#333, transparent);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .glassEffect {
+        position: absolute;
+        top: 12px;
+        height: 60%;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.07);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(14.9px);
+        -webkit-backdrop-filter: blur(14.9px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+    }
+    .title_item {
+      text-align: left;
+      width: 100%;
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        font-family: sans-serif;
+      }
+      @media only screen and (max-width: 768px) {
+        padding-left: 15px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    padding: 10px;
+    padding-top: 15px;
+  }
+}

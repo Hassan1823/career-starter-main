@@ -1,0 +1,144 @@
+#Step5Kd49 {
+  width: 100%;
+
+  .stepWrapper {
+    text-align: left;
+  }
+
+  .section_title {
+    h3 {
+      color: #222;
+    }
+  }
+
+  .LogoSlides {
+    margin: 20px auto;
+  }
+  .Next_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50px;
+    border-radius: 100%;
+    padding: 2px 4px;
+    background-color: #fff;
+    color: #222;
+    cursor: pointer;
+    box-shadow: 3px 10px 13px -7px rgba(188, 188, 188, 0.75);
+  }
+  .Prev_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -50px;
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 2px 4px;
+    background-color: #fff;
+    color: #222;
+    box-shadow: 3px 10px 13px -7px rgba(188, 188, 188, 0.75);
+  }
+
+  .card_wrapper {
+    padding: 10px;
+    .card {
+      box-shadow: 0px 2.1907448768615723px 1.7525957822799683px 0px #6c49ac05;
+      box-shadow: 0px 5.264664173126221px 4.211731433868408px 0px #6c49ac07;
+      box-shadow: 0px 9.912895202636719px 7.93031644821167px 0px #6c49ac09;
+      box-shadow: 0px 17.682912826538086px 14.146328926086426px 0px #6c49ac0b;
+      box-shadow: 0px 33.073944091796875px 26.45915412902832px 0px #6c49ac0d;
+      box-shadow: 0px 79.16667175292969px 63.333335876464844px 0px #6c49ac12;
+      border-radius: 5px;
+      // max-width: 320px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+
+      .Join_mark {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        .TypeLogo {
+          padding: 5px 7px;
+          background-color: #eeeaf2;
+          border-radius: 100%;
+          img {
+            height: 24px;
+            width: 24px;
+          }
+        }
+      }
+      .card_title {
+        margin-top: 20px;
+        color: #222;
+        h4 {
+          font-size: 14px;
+          font-weight: bold;
+          font-family: "Manrope", sans-serif;
+        }
+      }
+      .colorMark {
+        color: #a2ff86 !important;
+      }
+      .card_details {
+        margin-top: 30px;
+        p {
+          font-size: 12px;
+          font-weight: 400;
+          font-family: "Manrope", sans-serif;
+        }
+      }
+      .card_timing {
+        margin-top: 12px;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 8px;
+        .cart_item {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+        }
+        .groupImg {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          img {
+            height: 20px;
+            width: 20px;
+            margin-left: -6px;
+          }
+        }
+
+        .Time_item {
+          p {
+            font-family: "Manrope", sans-serif;
+            font-size: 10px;
+          }
+          display: flex;
+          justify-content: start;
+          align-content: center;
+          gap: 5px;
+          flex-direction: row;
+        }
+      }
+      .gapCs-3 {
+        gap: 20px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .Next_arrow,
+    .Prev_arrow {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+  }
+  @media only screen and (max-width: 480px) {
+  }
+}

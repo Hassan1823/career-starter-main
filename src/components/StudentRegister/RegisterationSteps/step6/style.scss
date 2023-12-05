@@ -1,0 +1,140 @@
+#Step6KSJen {
+  width: 100%;
+  .stepWrapper {
+    text-align: left;
+  }
+
+  .section_title {
+    h3 {
+      color: #222;
+    }
+  }
+  .Form_first_wrapper {
+    margin-top: 20px;
+    .Input_wrapper {
+      min-height: 150px;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .Name_field {
+      background-color: transparent;
+      font-size: 51px;
+      color: var(--primaryColor);
+      outline: none;
+      border: none;
+      width: 100%;
+      @media only screen and (min-width: 768px) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &::placeholder {
+        color: var(--primaryColor);
+        opacity: 0.2; /* Firefox */
+      }
+    }
+  }
+
+  .card {
+    height: 320px;
+    width: 580px;
+    padding: 10px 40px 40px;
+    .CardLogo {
+      float: right;
+    }
+    .nameLetter {
+      height: 120px;
+      width: 120px;
+      background-color: #fff5f6;
+      border: 5px solid #fff;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 2px 13px 8px rgba(142, 142, 142, 0.22);
+      text-transform: uppercase;
+      h2 {
+        color: #222;
+      }
+    }
+    .card_details {
+      margin-top: 40px;
+      h3 {
+        color: #222;
+        text-transform: capitalize;
+      }
+      p {
+        color: #475467;
+        font-weight: 600;
+        font-size: 12px;
+      }
+    }
+
+    .card_moreInfo {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 12px;
+      flex-direction: row;
+      margin-top: 20px;
+
+      .countryLogo {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 12px;
+        flex-direction: row;
+
+        .imgCountryContainer {
+          height: 25px;
+          width: 25px;
+          img {
+            border-radius: 100%;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .countryName {
+          color: #667085;
+          font-size: 12px;
+          margin: 0;
+        }
+      }
+      .interest_item {
+        background-color: #fff5f6;
+        border-radius: 30px;
+        width: max-content;
+        padding: 7px 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        .Interest_img_icon {
+          height: 16px;
+          width: 16px;
+        }
+        .Interest_text {
+          margin: 0;
+          font-weight: 300;
+          font-size: 12px;
+          color: #667085;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+    .Name_field {
+      position: relative;
+      top: 10px;
+    }
+  }
+}

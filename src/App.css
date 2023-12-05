@@ -1,0 +1,80 @@
+@font-face {
+  font-family: FilmotypeFashion;
+  src: url(./webfonts/font.woff2);
+}
+
+:root {
+  --primaryColor: #e31b54;
+  --primaryLightColor: #e7396a;
+  --primaryDarkColor: #c51647;
+  --secondaryColor: #ffffff;
+  /* fonts sizes / */
+  /* hero */
+  --heroFont: 40px;
+  --subPageHeroFont: 35px;
+  /* main  */
+  --mainHeading: 36px;
+  --subHeading: 24px;
+  /* secondary  */
+  --secHeading: 32px;
+  --subSecHeading: 20px;
+  /* body */
+  --bodyMainFontSize: 18px;
+  --bodySecondaryFontSize: 16px;
+}
+@media (max-width: 767px) {
+  /* fonts sizes / */
+  :root {
+    /* hero */
+    --heroFont: 30px;
+    --subPageHeroFont: 26px;
+    /* main */
+    --mainHeading: 30px;
+    --subHeading: 22px;
+    /* secondary  */
+    --secHeading: 28px;
+    --subSecHeading: 18px;
+    /* body */
+    --bodyMainFontSize: 16px;
+    --bodySecondaryFontSize: 16px;
+  }
+}
+body,
+* {
+  font-family: "FilmotypeFashion", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  scroll-behavior: smooth;
+}
+p {
+  margin: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+/* scroll bar  */
+/* width */
+/* \ */
+/* scroll bar end */
+.primary_btn {
+  border: none;
+  background-color: var(--primaryColor);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+
+/* hide the scroll bar */
+body {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none; 
+}

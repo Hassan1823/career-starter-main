@@ -1,0 +1,115 @@
+#StudentRegister127 {
+  position: relative;
+  .ProgressBarForm {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    height: 5px;
+    background-color: var(--primaryColor);
+    border-radius: 6px;
+    // width: 30%;
+  }
+  .backButton {
+    cursor: pointer;
+    color: #222;
+    h6 {
+      font-size: 12px;
+    }
+  }
+  .wrapper {
+    min-height: 100vh;
+    // background-color: #44b09e;
+    // background-image: linear-gradient(315deg, #aaddd5 0%, #e0d2c7 74%);
+    // background-image: url(../../assets/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+  }
+  .cntentWrapper {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  .sectionTitle {
+    text-align: center;
+  }
+  .section_title {
+    h3 {
+      color: #222;
+      text-align: left;
+    }
+  }
+  .choices_wrapper {
+    // min-height: 75vh;
+    position: relative;
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: auto auto;
+  }
+  h3 {
+    color: var(--primaryColor);
+  }
+  .action_Btn {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 25px;
+    .Next_Info {
+      display: flex;
+      justify-content: start;
+      align-content: center;
+      gap: 20px;
+      flex-direction: row;
+      color: var(--gray-400, #98a2b3);
+      .EnterIcon {
+        background: rgba(71, 84, 103, 0.2);
+        border-radius: 2px;
+        padding: 0 2px;
+        color: #fff;
+      }
+    }
+    .cutsPdn {
+      width: 160px;
+    }
+  }
+  .margiTop {
+    margin-top: 30px;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    color: #98a2b3;
+    flex-wrap: wrap;
+    margin: auto auto;
+    width: 80%;
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .action_Btn {
+      margin-top: 20px;
+    }
+    .choices_wrapper {
+      width: 100%;
+    }
+    .footer {
+      width: 100%;
+    }
+  }
+}
