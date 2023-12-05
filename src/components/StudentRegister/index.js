@@ -105,16 +105,16 @@ function StudentRegister() {
         return;
       }
       NextStep();
-      toast.success("OTP Sent to your Email Address", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "colored",
-      });
+      // toast.success("OTP Sent to your Email Address", {
+      //   position: "top-right",
+      //   autoClose: 5000,
+      //   hideProgressBar: false,
+      //   closeOnClick: true,
+      //   pauseOnHover: true,
+      //   draggable: true,
+      //   progress: undefined,
+      //   theme: "colored",
+      // });
       return;
     }
     NextStep();
