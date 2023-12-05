@@ -5,11 +5,12 @@ import ScrollBar from "../../components/ScrollBar";
 function Home() {
   return (
     <>
-    <section className="snap-section">
-
-      <Banner />
-    </section>
-      <ScrollBar />
+      <section className="snap-section">
+        <Banner />
+      </section>
+      <section>
+        <ScrollBar />
+      </section>
     </>
   );
 }

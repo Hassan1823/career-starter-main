@@ -1,13 +1,15 @@
 .main-container {
   background-color: white;
-  scroll-snap-align: start;
+  scroll-snap-align: end;
   // padding-top: 2%;
 }
 
 .hor-scroll {
   position: relative;
-  height: 300vh;
+  height: 180vh;
   background-image: url(../../assets/images/bg-s.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow-y: clip;
 }
 
@@ -34,7 +36,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: start;
-  gap: 3rem;
+  gap: 1rem;
   // margin-left: 13%;
 }
 

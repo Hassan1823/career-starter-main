@@ -5,12 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 html {
   scroll-snap-type: y mandatory;
+  /* Add any other styles */
 }
 
 .snap-section {
   scroll-snap-align: start;
+  /* Add any other styles */
 }
