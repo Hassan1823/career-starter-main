@@ -136,9 +136,9 @@ function StudentRegister() {
       ></motion.div>
       <div
         className="wrapper"
-        style={{
-          backgroundImage: currentStep == 7 ? `url(${bg2})` : `url(${bg1})`,
-        }}
+        // style={{
+        //   backgroundImage: currentStep == 7 ? `url(${bg2})` : `url(${bg1})`,
+        // }}
       >
         <div className="container">
           <div className="sectionTitle">
