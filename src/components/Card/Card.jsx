@@ -6,6 +6,7 @@ const Card = () => {
     {
       id: 1,
       imgUrl: "./green-bg.png",
+      icon: "./bcg-icon.png",
       task: `2 Task / 2 Hours`,
       title1: `Introduction to `,
       title2: `Strategy Consulting`,
@@ -16,6 +17,7 @@ const Card = () => {
     {
       id: 2,
       imgUrl: "./girl-bg.png",
+      icon: "./google-icon.png",
       task: `2 Tasks / 2 hours`,
       title1: `Project Management `,
       title2: `Challenge`,
@@ -25,7 +27,8 @@ const Card = () => {
     },
     {
       id: 3,
-      imgUrl: "./last-bg.png",
+      icon: "./lufthansa-icon.png",
+      imgUrl: "./girl-bg.png",
       task: `2 Tasks / 2 hours`,
       title1: `Lufthansa Aviation `,
       title2: `Management Challenge`,
@@ -45,6 +48,10 @@ const Card = () => {
               {/* sub container */}
               <div className="grey-card-container">
                 {/* bg img */}
+                <div className="bg">
+
+                <img src={item.icon} alt="card-bg" className="card-logo" />
+                </div>
                 <img src={item.imgUrl} alt="card-bg" className="card-bg" />
                 {/* task/ hours */}
                 <p className="card-task-p">{item.task}</p>

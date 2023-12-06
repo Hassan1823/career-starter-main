@@ -17,8 +17,8 @@
     0px 17.683px 14.146px 0px rgba(108, 73, 172, 0.04),
     0px 33.074px 26.459px 0px rgba(108, 73, 172, 0.05),
     0px 79.167px 63.333px 0px rgba(108, 73, 172, 0.07);
-    // font-family: sans-serif;
-    // font-family: Public Sans;
+  // font-family: sans-serif;
+  // font-family: Public Sans;
 
   .grey-card-container {
     display: flex;
@@ -41,7 +41,31 @@
         object-fit: contain;
       }
       margin-bottom: 23.22px;
+      position: relative;
+      z-index: 1; /* Add this line */
     }
+
+    .bg {
+      position: absolute;
+      z-index: 99;
+      width: 64px;
+      height: 64px;
+      flex-shrink: 0;
+      filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.1));
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        object-fit: contain;
+        margin-top: 16px;
+        margin-left: 16px;
+        border-radius: 9px;
+    }  
+
+    // .bg img{
+    //   width: 40px;
+    //   height: 40px;
+    // } 
 
     .card-task-p {
       font-size: 10px;
@@ -129,6 +153,6 @@
   }
 
   .detail-button:hover {
-    background-color: #6B8CFF;
+    background-color: #6b8cff;
   }
 }
