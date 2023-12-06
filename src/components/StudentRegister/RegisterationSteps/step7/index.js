@@ -11,6 +11,7 @@ function Step7({ EmailAddress }) {
       initial={{ opacity: 0.2, scale: 0.2, x: "50%" }}
       animate={{ opacity: 1, scale: 1, x: 0 }}
       transition={{ duration: 0.5 }}
+      
     >
       <div className="stepWrapper">
         {/* <div className="backButton" onClick={() => BackSetp()}>

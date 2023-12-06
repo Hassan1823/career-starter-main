@@ -13,7 +13,11 @@
     cursor: pointer;
     color: #222;
     h6 {
-      font-size: 12px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      font-family: sans-serif;
     }
   }
   .wrapper {
@@ -21,7 +25,22 @@
     // background-color: #44b09e;
     // background-image: linear-gradient(315deg, #aaddd5 0%, #e0d2c7 74%);
     // background-image: url(../../assets/images/bg.png);
-    background: linear-gradient(to left, #c9daf9 0%, #f9e5ec 80%);
+    // background: linear-gradient(to left, #c9daf9 0%, #f9e5ec 80%);
+    // background-color: #9ab0d6;
+    // background-image: linear-gradient(
+    //   203deg,
+    //   #9ab0d6 0%,
+    //   #fbfbfc 47%,
+    //   #f7aabd 100%
+    // );
+    background: rgb(252, 236, 242);
+    background: linear-gradient(
+      203deg,
+      rgba(225, 232, 246, 1) 0%,
+      rgba(252, 247, 248, 1) 50%,
+      rgba(252, 236, 242, 1) 100%
+    );
+
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;

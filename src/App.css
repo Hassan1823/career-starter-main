@@ -65,16 +65,24 @@ p {
   color: #fff;
   padding: 10px 20px;
   border-radius: 6px;
+  font-family: sans-serif;
+  /* font-size: 16; */
+  /* font-family: Public Sans; */
+  font-size: 16px;
+  font-weight: 700;
 }
-
+.primary_btn:hover {
+  background-color: var(--primaryDarkColor);
+  box-shadow: 0 0 10px rgb(213, 208, 237);
+}
 
 /* hide the scroll bar */
 body {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   overflow-y: scroll;
 }
 
 body::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }

@@ -1,0 +1,134 @@
+.main-card-container {
+  width: 326px;
+  height: 373px;
+  flex-shrink: 0;
+  margin-right: 12.3px;
+  border-radius: 9.328px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 11px;
+  //   align-items: center;
+  font-size: 16px;
+  box-shadow: 0px 2.191px 1.753px 0px rgba(108, 73, 172, 0.02),
+    0px 5.265px 4.212px 0px rgba(108, 73, 172, 0.03),
+    0px 9.913px 7.93px 0px rgba(108, 73, 172, 0.04),
+    0px 17.683px 14.146px 0px rgba(108, 73, 172, 0.04),
+    0px 33.074px 26.459px 0px rgba(108, 73, 172, 0.05),
+    0px 79.167px 63.333px 0px rgba(108, 73, 172, 0.07);
+    // font-family: sans-serif;
+    // font-family: Public Sans;
+
+  .grey-card-container {
+    display: flex;
+    flex-direction: column;
+    width: 304px;
+    height: 300px;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     justify-content: space-between;
+    border-radius: 10px;
+    background: var(--secondary-25, #f5f8ff);
+    margin-bottom: 11px;
+
+    .card-bg {
+      height: 166.7px;
+      width: 304px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      margin-bottom: 23.22px;
+    }
+
+    .card-task-p {
+      font-size: 10px;
+      color: #98a2b3;
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      margin-left: 16px;
+      margin-bottom: 8px;
+    }
+
+    .card-sub-heading {
+      color: #e13551;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 145%;
+      margin-left: 16px;
+      margin-bottom: 6px;
+    }
+
+    .title-heading {
+      color: #171721;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+      margin-left: 16px;
+    }
+  }
+
+  .card-footer {
+    display: flex;
+    width: 304px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ft-active {
+    margin-left: 11px;
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    height: 22px;
+    width: auto;
+  }
+
+  .green {
+    width: 10.14px;
+    height: 10.124px;
+    background-color: #5fdcb3;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .ft-active {
+    color: #344054;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    //     font-family: sans-serif;
+  }
+  .detail-button {
+    display: flex;
+    width: 112px;
+    border: transparent;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background-color: var(--primary-200, #fecdd6);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    color: #fff;
+    /* Trans Card: Icons */
+    box-shadow: 0px 2.191px 1.753px 0px rgba(108, 73, 172, 0.02),
+      0px 5.265px 4.212px 0px rgba(108, 73, 172, 0.03),
+      0px 9.913px 7.93px 0px rgba(108, 73, 172, 0.04),
+      0px 17.683px 14.146px 0px rgba(108, 73, 172, 0.04);
+  }
+
+  .detail-button:hover {
+    background-color: #6B8CFF;
+  }
+}

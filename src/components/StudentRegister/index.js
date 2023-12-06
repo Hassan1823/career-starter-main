@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
 import "./styles.scss";
+import React, { useEffect } from "react";
 import Step1 from "./RegisterationSteps/step1";
 import { IoReturnDownBackSharp } from "react-icons/io5";
 import Step2 from "./RegisterationSteps/step2";
@@ -27,19 +27,19 @@ function StudentRegister() {
   const [EmailAddress, setEmailAddress] = useState("");
 
   const NextStep = () => {
-    if (currentStep == lastStep) {
+    if (currentStep === lastStep) {
       return;
     }
     setCurrentStep((prev) => prev + 1);
   };
   const BackSetp = () => {
-    if (currentStep == 1) {
+    if (currentStep === 1) {
       return;
     }
     setCurrentStep((prev) => prev - 1);
   };
   const checkStages = () => {
-    if (currentStep == 1) {
+    if (currentStep === 1) {
       if (!selectedItem?.length) {
         toast.error("Please Select 1 Interest", {
           position: "top-right",
@@ -56,7 +56,7 @@ function StudentRegister() {
       NextStep();
       return;
     }
-    if (currentStep == 2) {
+    if (currentStep === 2) {
       if (!firstName?.length) {
         toast.error("Please Enter Your First Name", {
           position: "top-right",
@@ -73,7 +73,7 @@ function StudentRegister() {
       NextStep();
       return;
     }
-    if (currentStep == 3) {
+    if (currentStep === 3) {
       if (!LastName?.length) {
         toast.error("Please Enter Your Last Name", {
           position: "top-right",
@@ -90,7 +90,7 @@ function StudentRegister() {
       NextStep();
       return;
     }
-    if (currentStep == 6) {
+    if (currentStep === 6) {
       if (!EmailAddress?.length) {
         toast.error("Please Enter Your University Email", {
           position: "top-right",
@@ -157,7 +157,7 @@ function StudentRegister() {
                   </h6>
                 </div>
               </div>
-              {currentStep == 6 ? (
+              {currentStep === 6 ? (
                 <div className="section_title">
                   <h3>/your university e-mail</h3>
                 </div>
@@ -165,26 +165,26 @@ function StudentRegister() {
             </div>
           </div>
           {/* // form part  */}
-          <div className={currentStep == 6 ? "container-fluid" : "container"}>
+          <div className={currentStep === 6 ? "container-fluid" : "container"}>
             <div className="choices_wrapper">
-              {currentStep == 1 ? (
+              {currentStep === 1 ? (
                 <Step1
                   selectedItem={selectedItem}
                   setSelectedItem={setSelectedItem}
                 />
-              ) : currentStep == 2 ? (
+              ) : currentStep === 2 ? (
                 <Step2 firstName={firstName} setFirstName={setFirstName} />
-              ) : currentStep == 3 ? (
+              ) : currentStep === 3 ? (
                 <Step3
                   firstName={firstName}
                   LastName={LastName}
                   setLastName={setLastName}
                 />
-              ) : currentStep == 4 ? (
+              ) : currentStep === 4 ? (
                 <Step4 />
-              ) : currentStep == 5 ? (
+              ) : currentStep === 5 ? (
                 <Step5 />
-              ) : currentStep == 6 ? (
+              ) : currentStep === 6 ? (
                 <>
                   <Step6
                     firstName={firstName}
@@ -192,7 +192,7 @@ function StudentRegister() {
                     setEmailAddress={setEmailAddress}
                   />
                 </>
-              ) : currentStep == 7 ? (
+              ) : currentStep === 7 ? (
                 <Step7 EmailAddress={EmailAddress} />
               ) : null}
             </div>

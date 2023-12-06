@@ -17,6 +17,7 @@ import tree from "../../assets/images/flags/coconut-tree.png";
 import globe from "../../assets/images/flags/planet-earth.png";
 import portogal from "../../assets/images/flags/portogal.jpg";
 import spain from "../../assets/images/flags/span.png";
+import Card from "../Card/Card";
 import "./styles.scss";
 function Banner() {
   const [selectedLogo, setSelectedLogo] = useState(logo1);
@@ -116,7 +117,8 @@ function Banner() {
             <div className="col-md-6 p-0">
               <div className="Group_wrapper">
                 <div className="groupImg">
-                  <img src={GroupCard} className="img-fluid" />
+                  {/* <img src={GroupCard} className="img-fluid" alt="alt"/> */}
+                  <Card />
                 </div>
                 <div className="titles">
                   <div className="title_item">
