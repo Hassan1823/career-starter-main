@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 850px;
   height: 100vh;
-  padding: 20px;
+  padding: 40px;
 
   .banner_wrapper {
     // background-color: #44b09e;
@@ -131,10 +131,63 @@
     }
   }
 
+  .logo-grid {
+    // border: 1px solid black;
+    width: 372px;
+    height: 64px;
+    display: flex;
+    margin-top: 29px;
+    display: flex;
+    align-items: center;
+      margin-left: 115px;
+
+  }
+  .logo-g {
+    margin-right: 12px;
+    width: 64px;
+    height: 64px;
+    background: #fff;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    /* Transp Card v2. */
+    box-shadow: 0px 2.191px 1.753px 0px rgba(108, 73, 172, 0.02),
+      0px 5.265px 4.212px 0px rgba(108, 73, 172, 0.03),
+      0px 9.913px 7.93px 0px rgba(108, 73, 172, 0.04),
+      0px 17.683px 14.146px 0px rgba(108, 73, 172, 0.04),
+      0px 33.074px 26.459px 0px rgba(108, 73, 172, 0.05),
+      0px 79.167px 63.333px 0px rgba(108, 73, 172, 0.07);
+  }
+  .arrow-logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 41px;
+    padding: 8px;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #fff;
+    object-fit: contain;
+    /* Transp Card v2. */
+    box-shadow: 0px 2.191px 1.753px 0px rgba(108, 73, 172, 0.02),
+      0px 5.265px 4.212px 0px rgba(108, 73, 172, 0.03),
+      0px 9.913px 7.93px 0px rgba(108, 73, 172, 0.04),
+      0px 17.683px 14.146px 0px rgba(108, 73, 172, 0.04),
+      0px 33.074px 26.459px 0px rgba(108, 73, 172, 0.05),
+      0px 79.167px 63.333px 0px rgba(108, 73, 172, 0.07);
+  }
+
   .Group_wrapper {
     // border: 1px solid black;
+    display: flex;
+    flex-direction: column;
     .groupImg {
       margin-left: 62vw;
+      margin-top: 92px;
       display: flex;
       justify-content: end;
       align-content: center;

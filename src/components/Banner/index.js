@@ -120,6 +120,21 @@ function Banner() {
                   {/* <img src={GroupCard} className="img-fluid" alt="alt"/> */}
                   <Card />
                 </div>
+                <div className="logo-grid">
+                  <div className="logo-g">
+                    <img src="./bcg-icon.png" alt="logo" />
+                  </div>
+                  <div className="logo-g">
+                    <img src="./google-icon.png" alt="logo" />
+                  </div>
+                  <div className="logo-g">
+                    <img src="./lufthansa-icon.png" alt="logo" />
+                  </div>
+                  <div className="arrow-logo">
+                    <img src="./Icon.png" alt="logo" />
+
+                  </div>
+                </div>
                 <div className="titles">
                   <div className="title_item">
                     <h3>Explore Challenges</h3>
