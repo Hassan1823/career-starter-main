@@ -1,6 +1,14 @@
+// !imports
+
 import React, { useState } from "react";
-import GroupCard from "../../assets/images/Group.png";
 import { FaRegCircleQuestion } from "react-icons/fa6";
+
+//! local imports
+import "./styles.scss";
+import Card from "../Card/Card";
+
+// ! images imports
+import GroupCard from "../../assets/images/Group.png";
 import logo1 from "../../assets/images/1.jpg";
 import logo2 from "../../assets/images/2.png";
 import logo3 from "../../assets/images/3.png";
@@ -17,8 +25,6 @@ import tree from "../../assets/images/flags/coconut-tree.png";
 import globe from "../../assets/images/flags/planet-earth.png";
 import portogal from "../../assets/images/flags/portogal.jpg";
 import spain from "../../assets/images/flags/span.png";
-import Card from "../Card/Card";
-import "./styles.scss";
 function Banner() {
   const [selectedLogo, setSelectedLogo] = useState(logo1);
   return (
@@ -30,7 +36,7 @@ function Banner() {
               <div className="gropu1Sectin">
                 <div className="group_wrapper">
                   <div className="title">
-                    <h2>Join /varyance and fast-track your career start</h2>
+                    <h2>Join /varyance and <br/>fast-track your career start</h2>
                     <p className="mt-1">
                       Solve real-world challenges designed by investment banks,
                       law firms, consulting firms and industry leaders across
@@ -61,10 +67,11 @@ function Banner() {
                         <label htmlFor="dropdown"></label>
                       </div>
                       <div className="imgGroup">
-                        <img src={avatar1} alt="" />
-                        <img src={avatar2} alt="" />
-                        <img src={avatar3} alt="" />
-                        <img src={avatar4} alt="" />
+                        <img src='./p4.png' alt="" />
+                        <img src='./p4.png' alt="" />
+                        <img src='./p3.png' alt="" />
+                        <img src='./p2.png' alt="" />
+                        <img src='./p1.png' alt="" />
                       </div>
                     </div>
                   </div>
@@ -115,43 +122,25 @@ function Banner() {
             </div>
 
             <div className="col-md-6 p-0">
-              <div className="Group_wrapper">
-                <div className="groupImg">
+              <div className="grid-wrapper">
+                <div className="grid-cards">
                   {/* <img src={GroupCard} className="img-fluid" alt="alt"/> */}
                   <Card />
                 </div>
-                <div className="logo-grid">
-                  <div className="logo-g">
-                    <img src="./bcg-icon.png" alt="logo" />
-                  </div>
-                  <div className="logo-g">
-                    <img src="./google-icon.png" alt="logo" />
-                  </div>
-                  <div className="logo-g">
-                    <img src="./lufthansa-icon.png" alt="logo" />
-                  </div>
-                  <div className="arrow-logo">
-                    <img src="./Icon.png" alt="logo" />
-
-                  </div>
+              <div className="logo-grid">
+                <div className="logo-g">
+                  <img src="./bcg-icon.png" alt="logo" />
                 </div>
-                <div className="titles">
-                  <div className="title_item">
-                    <h3>Explore Challenges</h3>
-                    <p>
-                      Solve real-world challenges designed by investment banks,
-                      law firms, consulting firms and industry leaders across
-                      the globe. <FaRegCircleQuestion size={18} />
-                    </p>
-                  </div>
-                  <div className="title_item titleItem2">
-                    <h3>Attend Events</h3>
-                  </div>
-                  <div className="title_item titleItem3">
-                    <div className="glassEffect"></div>
-                    <h3>Build your Network</h3>
-                  </div>
+                <div className="logo-g">
+                  <img src="./google-icon.png" alt="logo" />
                 </div>
+                <div className="logo-g">
+                  <img src="./lufthansa-icon.png" alt="logo" />
+                </div>
+                <div className="arrow-logo">
+                  <img src="./Icon.png" alt="logo" />
+                </div>
+              </div>
               </div>
             </div>
           </div>
