@@ -36,7 +36,10 @@ function Banner() {
               <div className="gropu1Sectin">
                 <div className="group_wrapper">
                   <div className="title">
-                    <h2>Join /varyance and <br/>fast-track your career start</h2>
+                    <h2>
+                      Join /varyance and <br />
+                      fast-track your career start
+                    </h2>
                     <p className="mt-1">
                       Solve real-world challenges designed by investment banks,
                       law firms, consulting firms and industry leaders across
@@ -66,12 +69,55 @@ function Banner() {
                         </select>
                         <label htmlFor="dropdown"></label>
                       </div>
-                      <div className="imgGroup">
-                        <img src='./p4.png' alt="" />
-                        <img src='./p4.png' alt="" />
-                        <img src='./p3.png' alt="" />
-                        <img src='./p2.png' alt="" />
-                        <img src='./p1.png' alt="" />
+                      <div
+                        className="imgGroup"
+                        style={{ position: "relative" }}
+                      >
+                        <img
+                          src="./p4.png"
+                          alt=""
+                          style={{
+                            zIndex: 5,
+                            marginLeft: "-15px",
+                            position: "relative",
+                          }}
+                        />
+                        <img
+                          src="./p4.png"
+                          alt=""
+                          style={{
+                            zIndex: 4,
+                            marginLeft: "-15px",
+                            position: "relative",
+                          }}
+                        />
+                        <img
+                          src="./p3.png"
+                          alt=""
+                          style={{
+                            zIndex: 3,
+                            marginLeft: "-15px",
+                            position: "relative",
+                          }}
+                        />
+                        <img
+                          src="./p2.png"
+                          alt=""
+                          style={{
+                            zIndex: 2,
+                            marginLeft: "-15px",
+                            position: "relative",
+                          }}
+                        />
+                        <img
+                          src="./p1.png"
+                          alt=""
+                          style={{
+                            zIndex: 1,
+                            marginLeft: "-15px",
+                            position: "relative",
+                          }}
+                        />
                       </div>
                     </div>
                   </div>
@@ -127,20 +173,20 @@ function Banner() {
                   {/* <img src={GroupCard} className="img-fluid" alt="alt"/> */}
                   <Card />
                 </div>
-              <div className="logo-grid">
-                <div className="logo-g">
-                  <img src="./bcg-icon.png" alt="logo" />
+                <div className="logo-grid">
+                  <div className="logo-g">
+                    <img src="./bcg-icon.png" alt="logo" />
+                  </div>
+                  <div className="logo-g">
+                    <img src="./google-icon.png" alt="logo" />
+                  </div>
+                  <div className="logo-g">
+                    <img src="./lufthansa-icon.png" alt="logo" />
+                  </div>
+                  <div className="arrow-logo">
+                    <img src="./Icon.png" alt="logo" />
+                  </div>
                 </div>
-                <div className="logo-g">
-                  <img src="./google-icon.png" alt="logo" />
-                </div>
-                <div className="logo-g">
-                  <img src="./lufthansa-icon.png" alt="logo" />
-                </div>
-                <div className="arrow-logo">
-                  <img src="./Icon.png" alt="logo" />
-                </div>
-              </div>
               </div>
             </div>
           </div>

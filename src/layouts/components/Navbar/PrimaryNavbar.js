@@ -13,27 +13,11 @@ function PrimaryNavbar() {
         <Navbar expand="lg" className="bg-body-tertiary">
           <Container fluid>
             <Navbar.Brand href="/">
-              <img src={logo} className="Logo_nav" />
+              <img src={logo} className="Logo_nav" alt="logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse className="justify-content-end">
-              <Nav className="Nav_list_wrapper">
-                <li class="nav-item">
-                  <Link class="nav-link " to="/">
-                    About
-                  </Link>
-                </li>
-                <li class="nav-item">
-                  <Link class="nav-link " to="/register">
-                    Career
-                  </Link>
-                </li>
-                <li class="nav-item">
-                  <Link class="nav-link " to="/register">
-                    <button className="Login_btn">Login</button>
-                  </Link>
-                </li>
-              </Nav>
+              
             </Navbar.Collapse>
           </Container>
         </Navbar>

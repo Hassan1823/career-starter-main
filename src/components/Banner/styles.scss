@@ -1,8 +1,7 @@
 .HomeBannerSection {
   min-height: 850px;
-  height: 999px;
   min-width: 100%;
-  width: 1840px;
+  width: 100vw;
   flex-shrink: 0;
   padding: 40px;
 
@@ -12,25 +11,23 @@
     background-image: url(../../assets/images/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 100%;
-    margin: auto auto;
+    min-width: 100%;
+    width: 1840px;
+    height: 999px;
+    // margin: auto auto;
     border-radius: 20px;
-    padding-left: 4vw;
-    padding-top: 16vh;
+    padding-left: 73px;
   }
 
   .gropu1Sectin {
+    padding-top: 263px;
     height: 100%;
     display: flex;
     justify-content: start;
     align-content: center;
     .group_wrapper {
       margin: auto auto;
-      padding-left: 30px;
       .title {
-        // width: 722px;
-        margin-top: 10vh;
         h2 {
           font-size: 48px;
           color: #101828;
@@ -48,6 +45,7 @@
           font-weight: 500;
           line-height: 145%;
           color: #0c111d;
+          margin-top: 2px;
         }
       }
       .searchInput {
@@ -91,19 +89,20 @@
           flex-wrap: wrap;
         }
 
-        .imgGroup {
-          img {
-            margin-left: -15px;
-            height: 60px;
-            width: 60px;
-            border: 3px solid #fff;
-            border-radius: 100%;
-          }
-        }
+        // .imgGroup {
+          
+        //   img {
+        //     margin-left: -15px;
+        //     height: 60px;
+        //     width: 60px;
+        //     // border: 3px solid #fff;
+        //     // border-radius: 100%;
+        //   }
+        // }
       }
     }
     .quick_links {
-      margin-top: 100px;
+      margin-top: 204px;
       h4 {
         font-family: sans-serif;
         font-size: 16px;
@@ -284,7 +283,7 @@
   display: flex;
   flex-direction: column;
   padding-left: 9vw;
-  padding-top: 10vh;
+  padding-top: 192px;
 }
 
 .grid-cards {
